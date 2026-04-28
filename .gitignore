@@ -1,113 +1,97 @@
-# =====================
-# Python
-# =====================
+# =========================
+# Python / FastAPI backend
+# =========================
 __pycache__/
 *.py[cod]
-*$py.class
-
+*.pyo
+*.pyd
 .venv/
 venv/
 env/
 ENV/
 
-pip-wheel-metadata/
-*.egg-info/
-.eggs/
-dist/
-build/
-
+# Python packaging / cache
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
+dist/
+build/
+*.egg-info/
 
-# =====================
-# FastAPI / 临时计算文件
-# =====================
-temp/
-uploads/
-outputs/
-results/
-*.log
-
-# 计算生成结果，可按需保留示例文件
-*_result.csv
-response_spectrum_result.csv
-
-# =====================
-# Jupyter
-# =====================
-.ipynb_checkpoints/
-
-# =====================
-# Environment files
-# =====================
+# Environment / secrets
 .env
 .env.*
 !.env.example
 
-# =====================
-# Flutter / Dart
-# =====================
+# Logs / temp
+*.log
+logs/
+tmp/
+temp/
+
+# Output data
+outputs/
+output/
+results/
+*.csv
+*.xlsx
+*.xls
+*.mat
+*.vtu
+
+# =========================
+# Flutter / Dart frontend
+# =========================
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
-build/
 
-# Android
-android/.gradle/
-android/local.properties
-android/app/debug
-android/app/profile
-android/app/release
+# Flutter build outputs
+frontend/**/build/
 
-# iOS / macOS
-ios/Pods/
-ios/.symlinks/
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
-macos/Pods/
-macos/.symlinks/
+# Generated platform files/cache
+frontend/**/.metadata
+frontend/**/.idea/
+frontend/**/ios/Flutter/Flutter.framework
+frontend/**/ios/Flutter/Flutter.podspec
+frontend/**/ios/Flutter/Generated.xcconfig
+frontend/**/ios/Flutter/ephemeral/
+frontend/**/ios/Pods/
+frontend/**/macos/Flutter/ephemeral/
+frontend/**/windows/flutter/ephemeral/
+frontend/**/linux/flutter/ephemeral/
 
-# =====================
-# Vue / Node
-# =====================
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Android / Gradle
+frontend/**/android/.gradle/
+frontend/**/android/local.properties
+frontend/**/android/app/debug/
+frontend/**/android/app/profile/
+frontend/**/android/app/release/
+frontend/**/*.jks
+frontend/**/key.properties
 
-.vite/
-.nuxt/
-.output/
-
-# =====================
-# IDE / Editor
-# =====================
+# =========================
+# IDE / OS
+# =========================
 .vscode/
-.idea/
+!.vscode/settings.json
+!.vscode/extensions.json
 
-# =====================
-# OS files
-# =====================
+.idea/
+*.iml
+
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# =====================
-# Data files
-# =====================
-*.csv
-*.txt
-*.xlsx
-*.xls
-
-# 但保留示例数据目录
-!examples/
-!examples/**
-!sample_data/
-!sample_data/**
+# =========================
+# User/local config
+# =========================
+*.local
+*.bak
+*.tmp

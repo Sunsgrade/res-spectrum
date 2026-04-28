@@ -5,7 +5,7 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from reaction_core import (
+from backend.reaction_core import (
     load_wave_file,
     calculate_response_spectrum,
     save_result_csv,
