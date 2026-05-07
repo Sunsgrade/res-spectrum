@@ -52,28 +52,27 @@ results/
 .pub/
 
 # Flutter build outputs
-frontend/**/build/
+tools/**/build/
 
 # Generated platform files/cache
-frontend/**/.metadata
-frontend/**/.idea/
-frontend/**/ios/Flutter/Flutter.framework
-frontend/**/ios/Flutter/Flutter.podspec
-frontend/**/ios/Flutter/Generated.xcconfig
-frontend/**/ios/Flutter/ephemeral/
-frontend/**/ios/Pods/
-frontend/**/macos/Flutter/ephemeral/
-frontend/**/windows/flutter/ephemeral/
-frontend/**/linux/flutter/ephemeral/
+tools/**/.metadata
+tools/**/.idea/
+tools/**/ios/Flutter/Flutter.framework
+tools/**/ios/Flutter/Flutter.podspec
+tools/**/ios/Flutter/Generated.xcconfig
+tools/**/ios/Flutter/ephemeral/
+tools/**/ios/Pods/
+tools/**/macos/Flutter/ephemeral/
+tools/**/windows/flutter/ephemeral/
+tools/**/linux/flutter/ephemeral/tools
 
-# Android / Gradle
-frontend/**/android/.gradle/
-frontend/**/android/local.properties
-frontend/**/android/app/debug/
-frontend/**/android/app/profile/
-frontend/**/android/app/release/
-frontend/**/*.jks
-frontend/**/key.properties
+tools/**/android/.gradle/
+tools/**/android/local.properties
+tools/**/android/app/debug/
+tools/**/android/app/profile/
+tools/**/android/app/release/
+tools/**/*.jks
+tools/**/key.properties
 
 # =========================
 # IDE / OS
@@ -95,3 +94,22 @@ desktop.ini
 *.local
 *.bak
 *.tmp
+
+website/node_modules/
+website/dist/
+website/.vite/
+
+# =========================
+# Vue / Node website
+# =========================
+website/node_modules/
+website/dist/
+website/.vite/
+website/.nuxt/
+website/.output/
+website/coverage/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
