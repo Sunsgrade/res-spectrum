@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  background: #07111f;
+  color: #e5eefc;
+}
+
+a {
+  color: inherit;
+}
+
+.section {
+  padding: 100px 7%;
+}
+
+.section-light {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.section-dark {
+  background: #07111f;
+  color: #e5eefc;
+}
+
+.section-title {
+  max-width: 900px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.section-title .en {
+  margin: 0 0 12px;
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+.section-title .desc {
+  margin-top: 18px;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.section-dark .section-title .desc {
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: white;
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.36);
+}
+
+.btn-ghost {
+  color: #e5eefc;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: rgba(15, 23, 42, 0.5);
+}
+
+@media (max-width: 980px) {
+  .section {
+    padding: 76px 5%;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
